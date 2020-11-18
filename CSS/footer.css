@@ -1,0 +1,13 @@
+.footer {
+display: flex; 
+width: 100%;
+background-color: black;
+height: 150px;
+color: white;
+font-size: 24px;
+
+}
+.footer p {
+	margin-left: 50%;
+	margin-top: 75px;
+}

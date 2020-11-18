@@ -1,0 +1,91 @@
+.mainheader {
+	height: 50px;
+	overflow: hidden; 
+	background-color: transparent;
+	padding: 10px 12px;
+	display: flex; 
+	width: 100vw;
+}
+.mainheader img {
+	height: auto;
+	width: 50px;
+	height: 50px;
+}
+.header_tekst_venstre {
+	float: left; 
+   letter-spacing: 5px;
+	font-size: 20px;
+	margin-left: 30px;
+}
+.mainheader ul{
+	position: absolute;
+	
+}
+.header_linker {
+	display: block;
+	position: absolute;
+	right: 25%;
+	word-spacing: 5vw;
+	font-size: 25px;
+	margin-top: 25px;
+	text-decoration: none;
+	list-style-type: none;
+}
+.header_linker a {
+	text-decoration: none;
+	color: white;
+}
+.header_linker li {
+	display: inline-block;
+}
+
+
+/* Meny som dropper ned når du hovrer over strekene */
+.droppheader {
+	
+    position: absolute;
+    top: 27.5px;
+    right: 40px;
+	display: none;
+
+}
+.droppheaderen{
+	  display: none;
+    position: absolute;
+    top: 30px;
+    right: 5.5px;
+    background-color: #99CAD6;
+    padding: 20px;
+    border-radius: 10px;
+	font-size: 22px;
+	z-index: 4;
+}
+.droppheaderen > li {
+    list-style-type: none;
+    line-height: 40px;
+    margin-left: 10px;
+}
+
+.droppheaderen > li > a {
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+/*MENY FOR MINDRE SKJERMER */
+@media only screen and (max-width: 900px){
+	.mainheader ul{
+		display: none;
+	}
+	.droppheader{
+		display: block;
+	}
+	
+	.droppheader:hover > .droppheaderen{
+		display: block;
+	}
+	
+	.header_tekst_venstre {
+		margin-left: 30%;
+	}
+}

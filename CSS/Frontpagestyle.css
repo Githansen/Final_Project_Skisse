@@ -1,0 +1,87 @@
+.flexcontainer {
+display: flex; 
+flex-flow: row wrap;
+flex-direction: row;
+background-color: #B44546;
+}
+.flex-container > div {
+	background-color: 
+}
+
+/* SEKSJON RETT UNDER HEADER */
+
+.topimage {
+	margin-top: 200px;
+	display: flex; 
+	background-color: #B44546;
+	width: 100%; 
+	height: 100%;
+}
+.topimage h1 {
+	margin-top: -5%;
+	padding: 15%;
+	font-size: 40px;
+	
+}
+.topimage img {
+	height: 100%;
+	width: 50%;
+	position: relative;
+	right: 20px;
+	
+}
+
+/* SLUTT PÅ SEKSJON RETT UNDER HEADER */
+/* BODY, NESTE RAD */
+.infotekst {
+	display: flex; 
+	flex-flow: wrap;
+	width: 60%;
+	height: auto;
+	background-color: white;
+	font-size: 30px;
+	
+}
+.infotekst h2 {
+	margin-left: 20%;
+	word-break: break-word;
+	
+}
+.infotekst p {
+	
+	margin-left: 20%;
+	margin-right: 25%;
+	font-size: 35px;
+	
+}
+.infobilde {
+	width: 40%;
+	background-color: white;
+	height: auto;
+	display: flex;
+}
+.infobilde img {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+/* SLUTT PÅ RADEN */
+/* START PÅ NY RAD MED BILDER */
+.bilder {
+	display: flex; 
+	width: 100%; 
+	background-color: white;
+}
+.bilder img {
+	height: 400px;
+	padding: 3px;
+	width: 33%;
+}
+/* SLUTT PÅ RAD MED BILDER */
+/*START PÅ SISTE RAD MED TEKST */ 
+
+/* SLUTT PÅ SISTE RAD MED TEKST */
+
+body {
+	
+}

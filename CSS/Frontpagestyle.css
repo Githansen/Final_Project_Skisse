@@ -2,7 +2,7 @@
 display: flex; 
 flex-flow: row wrap;
 flex-direction: row;
-background-color: #B44546;
+background-color: #D0ECE7;
 }
 .flex-container > div {
 	background-color: 
@@ -11,26 +11,69 @@ background-color: #B44546;
 /* SEKSJON RETT UNDER HEADER */
 
 .topimage {
-	margin-top: 200px;
+	margin-top: 100px;
 	display: flex; 
-	background-color: #B44546;
+	background-color: #D0ECE7;
 	width: 100%; 
-	height: 100%;
+	height: auto;
+	min-height: 90vh;
 }
 .topimage h1 {
-	margin-top: -5%;
-	padding: 15%;
-	font-size: 40px;
 	
+	font-size: 40px;
 }
 .topimage img {
-	height: 100%;
-	width: 50%;
+	height: 80%;
+	width: auto;
 	position: relative;
-	right: 20px;
+}
+.tekstvenstre {
+	display: flex;
+	width: 25%; 
+}
+.tekstvenstre h1 {
+	margin-top: 70%;
+	padding: 24px;
+}
+.teksthøyre{
+	width: 25%; 
+	display: flex;
 	
 }
-
+.teksthøyre h1 {
+	margin-top: 30%;
+	padding: 24px;
+}
+.frontbilde {
+	width: 50%;
+	display: flex;
+}
+.frontbilde img {
+	margin-left: 25%;
+}
+@media only screen and (max-width: 1000px) {
+	.tekstvenstre {
+		width: 100%;
+		
+	}
+	.topimage {
+		flex-direction: column;
+		margin-top: -420px;
+	}
+	.frontbilde {
+		width: 100%;
+	}
+	.teksthøyre {
+		width: 100%;
+		margin-top: -250px;
+		
+	}
+}
+@media only screen and (max-width: 550px){
+	.topimage {
+		margin-top: -300px;
+	}
+}
 /* SLUTT PÅ SEKSJON RETT UNDER HEADER */
 /* BODY, NESTE RAD */
 .infotekst {
@@ -44,6 +87,7 @@ background-color: #B44546;
 }
 .infotekst h2 {
 	margin-left: 20%;
+	margin-top: 10%;
 	word-break: break-word;
 	
 }
@@ -52,7 +96,7 @@ background-color: #B44546;
 	margin-left: 20%;
 	margin-right: 25%;
 	font-size: 35px;
-	
+	word-spacing: 2px;
 }
 .infobilde {
 	width: 40%;
@@ -64,6 +108,23 @@ background-color: #B44546;
 	position: relative;
 	width: 100%;
 	height: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+	.infotekst{
+		width: 100%;
+		font-size: 25px;
+	}
+	.infotekst p {
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	.infotekst h2{
+		margin-left: 0;
+	}
+	.infobilde{
+		width: 100%;
+	}
 }
 /* SLUTT PÅ RADEN */
 /* START PÅ NY RAD MED BILDER */
@@ -83,5 +144,5 @@ background-color: #B44546;
 /* SLUTT PÅ SISTE RAD MED TEKST */
 
 body {
-	
+	margin: 0;
 }

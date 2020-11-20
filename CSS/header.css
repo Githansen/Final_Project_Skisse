@@ -1,10 +1,12 @@
 .mainheader {
 	height: 50px;
 	overflow: hidden; 
-	background-color: transparent;
+	background-color: #D0ECE7;
 	padding: 10px 12px;
 	display: flex; 
 	width: 100vw;
+	border-bottom: 2px solid black;
+	z-index: 4;
 }
 .mainheader img {
 	height: auto;
@@ -16,6 +18,11 @@
    letter-spacing: 5px;
 	font-size: 20px;
 	margin-left: 30px;
+	
+}
+.header_tekst_venstre a {
+	text-decoration: none;
+	
 }
 .mainheader ul{
 	position: absolute;
@@ -25,21 +32,44 @@
 	display: block;
 	position: absolute;
 	right: 25%;
-	word-spacing: 5vw;
-	font-size: 25px;
+	word-spacing: 25vw;
+	font-size: 30px;
 	margin-top: 25px;
+	letter-spacing: 8px;
 	text-decoration: none;
 	list-style-type: none;
 }
 .header_linker a {
 	text-decoration: none;
-	color: white;
+	color: black;
+	
 }
 .header_linker li {
 	display: inline-block;
+	
 }
-
-
+.smallscreenheader {
+	display: flex;
+	width: 100%;
+	display: none;
+	z-index: 4;
+	
+}
+.smallscreenheader {
+	word-spacing: 35vw;
+}
+.smallscreenheader li {
+	list-style-type: none;
+	font-size: 25px;
+	display: inline-block;
+	
+}
+.smallscreenheader a {
+	color: black; 
+	text-decoration: none;
+	margin-left: 50%;
+	letter-spacing: 8px;
+}
 /* Meny som dropper ned når du hovrer over strekene */
 .droppheader {
 	
@@ -49,39 +79,13 @@
 	display: none;
 
 }
-.droppheaderen{
-	  display: none;
-    position: absolute;
-    top: 30px;
-    right: 5.5px;
-    background-color: #99CAD6;
-    padding: 20px;
-    border-radius: 10px;
-	font-size: 22px;
-	z-index: 4;
-}
-.droppheaderen > li {
-    list-style-type: none;
-    line-height: 40px;
-    margin-left: 10px;
-}
 
-.droppheaderen > li > a {
-    list-style-type: none;
-    text-decoration: none;
-    color: black;
-    padding: 10px;
-}
 /*MENY FOR MINDRE SKJERMER */
 @media only screen and (max-width: 900px){
 	.mainheader ul{
 		display: none;
 	}
-	.droppheader{
-		display: block;
-	}
-	
-	.droppheader:hover > .droppheaderen{
+	.smallscreenheader{
 		display: block;
 	}
 	
